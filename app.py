@@ -1,7 +1,4 @@
-
-
-            
-            from flask import Flask, render_template, request, redirect, url_for, session, jsonify, flash
+from flask import Flask, render_template, request, redirect, url_for, session, jsonify, flash
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
 from werkzeug.security import generate_password_hash, check_password_hash
