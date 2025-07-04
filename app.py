@@ -8,7 +8,7 @@ import uuid
 import random
 
 app = Flask(__name__)
-app.secret_key = '284fb46fe36e137815e7d6ebae6f1f683d503e8066a009ecd9fc4e49e7e20164' # IMPORTANT: Change this to a strong, random key in production!
+app.secret_key = 'dfe190023a1199920bbcae7915a87e9b62dbe605355aaf8c3ef270b384526d82' # IMPORTANT: Change this to a strong, random key in production!
 
 # AWS Setup using IAM Role
 REGION = 'us-east-1'  # Replace with your actual AWS region
@@ -515,7 +515,7 @@ def cancel_booking():
     return redirect(url_for('dashboard'))
 
 
-if __name__ == '__main__':
+if __name__== '__main__':
     # IMPORTANT: In a production environment, disable debug mode and specify a production-ready host.
     app.run(debug=True, host='0.0.0.0')
 
